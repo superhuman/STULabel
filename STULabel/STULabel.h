@@ -17,6 +17,8 @@ STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 STU_EXPORT
 @interface STULabel : UIView <STULabelLayerDelegate, UIContentSizeCategoryAdjusting>
 
++ (void)performSetup;
+
 @property (nonatomic, readonly) STULabelLayer *layer;
 
 @property (nonatomic, weak, nullable) id<STULabelDelegate> delegate;

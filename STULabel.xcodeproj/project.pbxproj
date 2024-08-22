@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497F67AD2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 497F67AC2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h */; };
+		497F67AE2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 497F67AC2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h */; };
 		D40702842014EC17004E5C07 /* TextFramePerformanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40702832014EC17004E5C07 /* TextFramePerformanceVC.swift */; };
 		D407028D2014FFDF004E5C07 /* STULabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B0AEBC1F9259E600B5B2B9 /* STULabel.framework */; };
 		D407028E2014FFDF004E5C07 /* STULabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4B0AEBC1F9259E600B5B2B9 /* STULabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -683,6 +685,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		497F67AC2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STUMainScreenProperties-Internal.h"; sourceTree = "<group>"; };
 		D40702832014EC17004E5C07 /* TextFramePerformanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFramePerformanceVC.swift; sourceTree = "<group>"; };
 		D407028A2014FFB0004E5C07 /* STULabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = STULabel.xcodeproj; sourceTree = "<group>"; };
 		D407F00920E52B6700922204 /* Demo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Demo.xcconfig; sourceTree = "<group>"; };
@@ -1170,6 +1173,7 @@
 			isa = PBXGroup;
 			children = (
 				D4B0AFFE1F925BE000B5B2B9 /* STUMainScreenProperties.h */,
+				497F67AC2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h */,
 				D4B0AFFD1F925BE000B5B2B9 /* STUMainScreenProperties.m */,
 			);
 			name = MainScreenProperties;
@@ -1773,6 +1777,7 @@
 				D42384E71F9381D7000B8A63 /* Range.hpp in Headers */,
 				D43E67071FD464E200BABD1C /* STUPlaceholderObjects.h in Headers */,
 				D471C0771FFA87650014BE97 /* LabelPrerenderer.hpp in Headers */,
+				497F67AD2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h in Headers */,
 				D42384EE1F9381D7000B8A63 /* Vector.hpp in Headers */,
 				D44A5EB91F9A533C007325B4 /* Config.hpp in Headers */,
 				D42384DE1F9381D7000B8A63 /* Config.h in Headers */,
@@ -1863,6 +1868,7 @@
 				D497D6F720B708BC0009302B /* LayerVisibleBoundsObserver.hpp in Headers */,
 				D4981F011FBC8C2B007E88C2 /* InputClamping.hpp in Headers */,
 				D4CAE0FC2104B63100DFA867 /* STUParagraphStyle-Internal.hpp in Headers */,
+				497F67AE2C76D9A9000839A2 /* STUMainScreenProperties-Internal.h in Headers */,
 				D49F0AAE1FCC5FDE004B0E5C /* ThreadLocalAllocator.hpp in Headers */,
 				D4134E271FB20A3E00377349 /* STUBackgroundAttribute.h in Headers */,
 				D4ED608F1FF594CA00418E2A /* STUCancellationFlag.h in Headers */,

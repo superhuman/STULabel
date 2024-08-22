@@ -1,6 +1,6 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#import "STUMainScreenProperties.h"
+#import "STUMainScreenProperties-Internal.h"
 
 #import "stu/Assert.h"
 
@@ -57,11 +57,8 @@ static void updateMainScreenProperties(void) {
 #undef store
 }
 
-@interface UIScreen (STUMainScreenProperties)
-+ (void)load;
-@end
 @implementation UIScreen (STUMainScreenProperties)
-+ (void)load {
++ (void)performSetup {
   // We can't do this initialization lazily, because UIScreen must only be accessed on the
   // main thread. (Using `dispatch_sync(dispatch_get_main_queue(), ...)` would lead to a
   // deadlock when the main thread is waiting for the thread in which stu_mainScreen... is called

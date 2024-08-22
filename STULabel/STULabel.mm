@@ -17,6 +17,8 @@
 #import "Internal/STULabelLinkOverlayLayer.h"
 #import "Internal/STULabelSubrangeView.h"
 
+#import "STUMainScreenProperties-Internal.h"
+
 #import <ContactsUI/ContactsUI.h>
 
 #if TARGET_OS_MACCATALYST
@@ -580,6 +582,10 @@ static void addLabelLinkPopoverObserver(STULabel* label, STUTextLink* link, UIVi
 
 + (Class)layerClass {
   return STULabelLayer.class;
+}
+
++ (void)performSetup {
+    [UIScreen performSetup];
 }
 
 @dynamic layer;
