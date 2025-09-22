@@ -7,6 +7,8 @@
 #import "Font.hpp"
 #import "HashTable.hpp"
 
+#include <exception>
+
 namespace stu_label {
 
 extern NSString* const STUOriginalFontAttributeName;
@@ -35,7 +37,7 @@ public:
 
 #if STU_DEBUG
   ~TextStyleBuffer() {
-    if (!std::uncaught_exception()) {
+    if (!std::uncaught_exceptions()) {
       STU_DEBUG_ASSERT(!needToFixAttachmentAttributes_);
     }
   }
