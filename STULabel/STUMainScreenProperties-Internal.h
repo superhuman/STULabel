@@ -6,7 +6,7 @@
 //  Copyright © 2024 STULabel. All rights reserved.
 //
 
-#import "STUMainScreenProperties.h"
+#import <STULabel/STUMainScreenProperties.h>
 
 @interface UIScreen (STUMainScreenProperties)
 + (void)performSetup;

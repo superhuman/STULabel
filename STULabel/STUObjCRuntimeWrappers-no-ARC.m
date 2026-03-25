@@ -4,7 +4,7 @@
   #error This file must be compiled with -fno-objc-arc
 #endif
 
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "stu/Assert.h"
 

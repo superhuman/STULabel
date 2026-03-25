@@ -1,6 +1,6 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrame-Unsafe.h"
+#import <STULabel/STUTextFrame-Unsafe.h>
 
 #import "Kerning.hpp"
 #import "NSAttributedStringRef.hpp"

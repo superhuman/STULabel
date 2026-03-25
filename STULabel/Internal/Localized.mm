@@ -2,7 +2,7 @@
 
 #include "Localized.hpp"
 
-#include "STULabel/STULabel.h"
+#include <STULabel/STULabel.h>
 
 namespace stu_label {
 

@@ -156,9 +156,9 @@ static TempArray<TaggedStringRange> findTaggedStringRanges(
         }
       }
       buffer.append(TaggedStringRange{
-                      .rangeInTruncatedString = rangeInTruncatedString,
                       .rangeInOriginalString = !range.isTruncationTokenRange ? range.stringRange
                                              : para.excisedRangeInOriginalString(),
+                      .rangeInTruncatedString = rangeInTruncatedString,
                       .paragraphIndex = para.paragraphIndex,
                       .tagIndex = tagIndex,
                       .tag = tag,

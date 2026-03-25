@@ -1,8 +1,8 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
-#import "STULabelAlignment.h"
+#import <STULabel/STULabelAlignment.h>
 
 namespace stu_label {
   // Note: There are two places where we mutate text frame option properties:
@@ -43,7 +43,7 @@ STUDefaultTextAlignment stuDefaultTextAlignment(STULabelDefaultTextAlignment def
     static_assert((int)STUWritingDirectionRightToLeft == 1);
     static_assert((int)STUDefaultTextAlignmentLeft == 0);
     static_assert((int)STUDefaultTextAlignmentRight == 1);
-    return STUDefaultTextAlignment(defaultBaseWritingDirection ^ defaultTextAligment);
+    return STUDefaultTextAlignment((int)defaultBaseWritingDirection ^ (int)defaultTextAligment);
   case STULabelDefaultTextAlignmentTextStart:
   case STULabelDefaultTextAlignmentTextEnd:
     static_assert((int)STULabelDefaultTextAlignmentTextStart == (int)STUDefaultTextAlignmentStart);

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
 #import "stu/Assert.h"
 
@@ -52,7 +52,7 @@ STUCGImageFormat stuCGImageFormat(STUPredefinedCGImageFormat format,
       bitsPerComponent = 16;
       bitsPerPixel = 64;
       bitmapInfo = kCGBitmapFloatComponents
-                 | kCGImageByteOrder16Little
+                 | (CGBitmapInfo)kCGImageByteOrder16Little
                  | (withoutAlpha ? kCGImageAlphaNoneSkipLast        // RGBX16
                                  : kCGImageAlphaPremultipliedLast); // RGBA16
       break;

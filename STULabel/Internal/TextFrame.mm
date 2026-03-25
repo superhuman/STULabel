@@ -35,9 +35,7 @@ TextFrame::SizeAndOffset TextFrame::objectSizeAndThisOffset(const TextFrameLayou
                                                 layouter.rangeInOriginalString().end);
   const ArrayRef<const ColorRef> colors = layouter.colors();
 
-  return {.offset = verticalSearchTableSize + sanitizerGap
-                  + lineStringIndicesTableSize + sanitizerGap,
-          .size = verticalSearchTableSize
+  return {.size = verticalSearchTableSize
                 + sanitizerGap
                 + lineStringIndicesTableSize
                 + sanitizerGap
@@ -50,7 +48,9 @@ TextFrame::SizeAndOffset TextFrame::objectSizeAndThisOffset(const TextFrameLayou
                 + layouter.originalStringStyles().dataExcludingTerminator().arraySizeInBytes()
                 + sign_cast(stylesTerminatorSize)
                 + layouter.truncationTokenTextStyleData().arraySizeInBytes()
-                + sanitizerGap};
+                + sanitizerGap,
+          .offset = verticalSearchTableSize + sanitizerGap
+                  + lineStringIndicesTableSize + sanitizerGap};
 }
 
 TextFrame::TextFrame(TextFrameLayouter&& layouter, UInt dataSize)
@@ -59,15 +59,15 @@ TextFrame::TextFrame(TextFrameLayouter&& layouter, UInt dataSize)
     .lineCount = narrow_cast<Int32>(layouter.lines().count()),
     ._colorCount = narrow_cast<UInt16>(layouter.colors().count()),
     .layoutMode = layouter.layoutMode(),
-    .size = narrow_cast<CGSize>(layouter.scaleInfo().scale*layouter.inverselyScaledFrameSize()),
-    .textScaleFactor = layouter.scaleInfo().scale,
-    .displayScale = layouter.scaleInfo().originalDisplayScale,
     .rangeInOriginalStringIsFullString = layouter.rangeInOriginalStringIsFullString(),
     ._layoutIterationCount = narrow_cast<UInt8>(layouter.layoutCallCount()),
-    .rangeInOriginalString = layouter.rangeInOriginalString(),
     .truncatedStringLength = layouter.truncatedStringLength(),
-    .originalAttributedString = layouter.attributedString().attributedString,
-    ._dataSize = dataSize
+    .rangeInOriginalString = layouter.rangeInOriginalString(),
+    .size = narrow_cast<CGSize>(layouter.scaleInfo().scale*layouter.inverselyScaledFrameSize()),
+    .displayScale = layouter.scaleInfo().originalDisplayScale,
+    .textScaleFactor = layouter.scaleInfo().scale,
+    ._dataSize = dataSize,
+    .originalAttributedString = layouter.attributedString().attributedString
   }
 {
   incrementRefCount(originalAttributedString);

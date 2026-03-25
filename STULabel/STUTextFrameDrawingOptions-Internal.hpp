@@ -1,6 +1,6 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STUTextFrameDrawingOptions.h"
+#import <STULabel/STUTextFrameDrawingOptions.h>
 
 #import "Internal/TextFrameDrawingOptions.hpp"
 

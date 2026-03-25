@@ -1,8 +1,8 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#import "STULabelPrerenderer.h"
-#import "STULayerWithNullDefaultActions.h"
-#import "STUTextFrameAccessibilityElement.h"
+#import <STULabel/STULabelPrerenderer.h>
+#import <STULabel/STULayerWithNullDefaultActions.h>
+#import <STULabel/STUTextFrameAccessibilityElement.h>
 
 #import <UIKit/UIKit.h>
 

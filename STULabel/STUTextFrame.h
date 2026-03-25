@@ -1,16 +1,16 @@
 
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#import "STUCancellationFlag.h"
-#import "STUShapedString.h"
-#import "STUStartEndRange.h"
-#import "STUTextFlags.h"
-#import "STUTextFrameDrawingOptions.h"
-#import "STUTextFrameOptions.h"
-#import "STUTextFrameRange.h"
-#import "STUTextHighlightStyle.h"
-#import "STUTextLink.h"
-#import "STUTextRectArray.h"
+#import <STULabel/STUCancellationFlag.h>
+#import <STULabel/STUShapedString.h>
+#import <STULabel/STUStartEndRange.h>
+#import <STULabel/STUTextFlags.h>
+#import <STULabel/STUTextFrameDrawingOptions.h>
+#import <STULabel/STUTextFrameOptions.h>
+#import <STULabel/STUTextFrameRange.h>
+#import <STULabel/STUTextHighlightStyle.h>
+#import <STULabel/STUTextLink.h>
+#import <STULabel/STUTextRectArray.h>
 
 #import <CoreText/CoreText.h>
 

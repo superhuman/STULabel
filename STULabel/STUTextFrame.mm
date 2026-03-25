@@ -3,7 +3,7 @@
 #import "STUTextFrame-Internal.hpp"
 
 #import "stu/Assert.h"
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "STUTextAttributes-Internal.hpp"
 #import "STUTextFrameOptions-Internal.hpp"

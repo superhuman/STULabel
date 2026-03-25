@@ -9,8 +9,8 @@
 // you need to make sure that the text frame is kept alive, e.g. by storing a reference to the text
 // frame in a local variable that is annotated with the NS_VALID_UNTIL_END_OF_SCOPE attribute.
 
-#import "STUTextFrame.h"
-#import "STUTextFrameLine.h"
+#import <STULabel/STUTextFrame.h>
+#import <STULabel/STUTextFrameLine.h>
 
 STU_EXTERN_C_BEGIN
 

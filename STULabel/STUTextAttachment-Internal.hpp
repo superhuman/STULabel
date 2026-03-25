@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextAttachment.h"
+#import <STULabel/STUTextAttachment.h>
 
 #import "Internal/DrawingContext.hpp"
 

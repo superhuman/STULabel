@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextLink.h"
+#import <STULabel/STUTextLink.h>
 
 #import "Internal/Common.hpp"
 #import "Internal/Unretained.hpp"

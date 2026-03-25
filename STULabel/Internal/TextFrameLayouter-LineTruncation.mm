@@ -148,7 +148,7 @@ static CTFont* __nullable findMostCommonFont(const NSArrayRef<CTRun*>& runs,
       }
       lruTable[0] = e;
     } else {
-      lruTable.insert(0, Entry{font, .glyphCount = narrow_cast<Int32>(glyphCount),
+      lruTable.insert(0, Entry{.font = font, .glyphCount = narrow_cast<Int32>(glyphCount),
                                .minStringIndex = stringIndex});
     }
   }

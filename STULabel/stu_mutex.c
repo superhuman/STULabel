@@ -1,6 +1,6 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#include "stu_mutex.h"
+#include <STULabel/stu_mutex.h>
 
 STU_DISABLE_CLANG_WARNING("-Wunguarded-availability")
 STU_DISABLE_CLANG_WARNING("-Wunreachable-code")

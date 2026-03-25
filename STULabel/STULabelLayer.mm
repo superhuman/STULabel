@@ -1,9 +1,9 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
 #import "STULabelLayer-Internal.hpp"
-#import "STULabelSwiftExtensions.h"
+#import <STULabel/STULabelSwiftExtensions.h>
 
-#import "STUMainScreenProperties.h"
+#import <STULabel/STUMainScreenProperties.h>
 
 #import "STULabelDrawingBlock-Internal.hpp"
 #import "STULabelLayoutInfo-Internal.hpp"
@@ -2303,7 +2303,7 @@ STU_REENABLE_CLANG_WARNING
 
 STU_EXPORT
 STUTextFrameWithOrigin STULabelLayerGetTextFrameWithOrigin(STULabelLayer* __unsafe_unretained self) {
-  return {self->impl.textFrame().unretained, self->impl.textFrameOrigin(),
+  return {.textFrame = self->impl.textFrame().unretained, .origin = self->impl.textFrameOrigin(),
           .displayScale = self->impl.params().displayScale()};
 };
 

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelDrawingBlock.h"
+#import <STULabel/STULabelDrawingBlock.h>
 
 #import "STUTextFrame-Internal.hpp"
 

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUShapedString.h"
+#import <STULabel/STUShapedString.h>
 
 #import "Internal/Unretained.hpp"
 

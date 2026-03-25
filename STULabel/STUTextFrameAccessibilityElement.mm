@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextFrameAccessibilityElement.h"
+#import <STULabel/STUTextFrameAccessibilityElement.h>
 
-#import "STULabel/STUTextLink-Internal.hpp"
+#import "STUTextLink-Internal.hpp"
 
 #import "Internal/CoreAnimationUtils.hpp"
 #import "Internal/InputClamping.hpp"

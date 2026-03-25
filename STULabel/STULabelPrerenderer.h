@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelDrawingBlock.h"
-#import "STULabelLayoutInfo.h"
-#import "STUTextRange.h"
+#import <STULabel/STULabelDrawingBlock.h>
+#import <STULabel/STULabelLayoutInfo.h>
+#import <STULabel/STUTextRange.h>
 
 typedef void (^ STULabelRenderTaskSchedulerBlock)(
                void * __nullable taskContext,

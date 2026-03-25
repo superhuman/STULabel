@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUCancellationFlag.h"
+#import <STULabel/STUCancellationFlag.h>
 
 #import <UIKit/UIKit.h>
 

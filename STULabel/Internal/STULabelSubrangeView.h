@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STULabel.h"
+#import <STULabel/STULabel.h>
 
 #import "STULabelTiledLayer.h"
 

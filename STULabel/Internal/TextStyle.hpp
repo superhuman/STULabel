@@ -1,7 +1,7 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextAttributes.h"
-#import "STULabel/STUTextFlags.h"
+#import <STULabel/STUTextAttributes.h>
+#import <STULabel/STUTextFlags.h>
 
 #import "Color.hpp"
 #import "Common.hpp"

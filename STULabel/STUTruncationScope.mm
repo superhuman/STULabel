@@ -2,7 +2,7 @@
 
 #import "STUTruncationScope-Internal.h"
 
-#import "STUTextAttachment.h"
+#import <STULabel/STUTextAttachment.h>
 
 #import "Internal/InputClamping.hpp"
 #import "Internal/NSCoderUtils.hpp"

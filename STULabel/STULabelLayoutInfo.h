@@ -1,7 +1,7 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelAlignment.h"
-#import "STUTextFrame.h"
+#import <STULabel/STULabelAlignment.h>
+#import <STULabel/STUTextFrame.h>
 
 typedef struct STULabelLayoutInfo {
   /// The layout bounds of the text within the label. This rectangle is calculated from the

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelPrerenderer.h"
+#import <STULabel/STULabelPrerenderer.h>
 
 namespace stu_label {
   class LabelPrerenderer;

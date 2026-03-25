@@ -1,5 +1,5 @@
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <UIKit/UIKit.h>
 
@@ -220,4 +220,3 @@ STU_EXPORT
 @end
 
 STU_ASSUME_NONNULL_AND_STRONG_END
-

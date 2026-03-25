@@ -1,6 +1,6 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STUTextAttributes.h"
+#import <STULabel/STUTextAttributes.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

@@ -806,8 +806,8 @@ Int NSStringRef::endIndexOfGraphemeClusterAtImpl(Int index) const {
         ++index1;
         if (index1 == count) return index1;
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     return endIndexOfGraphemeClusterAtImpl_utf16Buffer(index, category, index1);
@@ -841,8 +841,8 @@ Int NSStringRef
           ++nextIndex;
         }
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     if (!finder.advanceForwards(category)) break;
@@ -882,8 +882,8 @@ Int NSStringRef::indexOfFirstGraphemeClusterBreakNotBeforeImpl(const Int index) 
           --index1;
         }
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     return endIndexOfGraphemeClusterAtImpl_utf16Buffer(index1, category, index);
@@ -922,8 +922,8 @@ Int NSStringRef::indexOfLastGraphemeClusterBreakBeforeImpl(Int index) const {
         if (--index1 == 0) return 0;
         cp = codePointFromSurrogatePair(c2, c1);
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     return indexOfLastGraphemeClusterBreakBeforeImpl_utf16Buffer(index1, category);
@@ -956,8 +956,8 @@ Int NSStringRef
           --index;
         }
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     if (finder.advanceBackwards(index, category)) {
@@ -998,8 +998,8 @@ Int NSStringRef::startIndexOfGraphemeClusterAtImpl(const Int index) const {
           cp = codePointFromSurrogatePair(c0, c);
         }
       }
-      STU_DEBUG_ASSERT(cp >= minSurrogateCodeUnit);
-      STU_ASSUME(cp >= minSurrogateCodeUnit);
+      STU_DEBUG_ASSERT(cp >= Char32{minSurrogateCodeUnit});
+      STU_ASSUME(cp >= Char32{minSurrogateCodeUnit});
       category = graphemeClusterCategory(cp);
     }
     return indexOfLastGraphemeClusterBreakBeforeImpl_utf16Buffer(index, category);

@@ -3,7 +3,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

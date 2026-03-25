@@ -1,6 +1,6 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STULabel/STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
 #import "Common.hpp"
 

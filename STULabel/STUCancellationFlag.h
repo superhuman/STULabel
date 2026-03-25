@@ -2,7 +2,7 @@
 
 #pragma once
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <stdatomic.h>
 #import <stdbool.h>

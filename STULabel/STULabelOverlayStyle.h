@@ -1,6 +1,6 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <UIKit/UIKit.h>
 
