@@ -11,8 +11,8 @@ using namespace stu_label;
 
 namespace stu_label {
 
-const LabelTextFrameInfo LabelTextFrameInfo::empty = {.isValid = true,
-                                                      .flags = STUTextFrameHasMaxTypographicWidth};
+const LabelTextFrameInfo LabelTextFrameInfo::empty = {.flags = STUTextFrameHasMaxTypographicWidth,
+                                                      .isValid = true};
 
 STU_NO_INLINE
 LabelTextFrameInfo labelTextFrameInfo(const TextFrame& frame,
@@ -121,11 +121,11 @@ LabelTextFrameInfo labelTextFrameInfo(const TextFrame& frame,
   minFrameSize.height = min(minFrameSize.height, ceilToScale(minFrameSize.height, displayScale));
 
   return {
-    .isValid = true,
     .flags = frame.flags,
     .textLayoutMode = frame.layoutMode,
     .horizontalAlignment = horizontalAlignment,
     .verticalAlignment = verticalAlignment,
+    .isValid = true,
     .lineCount = frame.lineCount,
     .layoutBounds = CGRect{{x, y}, {width, height}},
     .frameSize = frame.size,

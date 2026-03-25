@@ -42,8 +42,8 @@ struct TextFrameCompactIndex : Comparable<TextFrameCompactIndex> {
   bool operator<(TextFrameCompactIndex other) const { return bits < other.bits; }
 
   TextFrameIndex withLineIndex(Int32 lineIndex) const {
-    return {.indexInTruncatedString = sign_cast(indexInTruncatedString()),
-            .isIndexOfInsertedHyphen = isIndexOfInsertedHyphen(),
+    return {.isIndexOfInsertedHyphen = isIndexOfInsertedHyphen(),
+            .indexInTruncatedString = sign_cast(indexInTruncatedString()),
             .lineIndex = sign_cast(lineIndex)};
   }
 

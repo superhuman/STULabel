@@ -150,7 +150,7 @@ bool GlyphSpan::copyInnerCaretOffsetsForLigatureGlyphAtIndexImpl(
   // The font does not contain caret offsets for this glyph, so we just divide up the glyph's
   // width equally.
   n = outInnerCaretOffsets.count();
-  const CGFloat d = narrow_cast<CGFloat>(glyphSpan.typographicWidth())/(n + 1);
+  const CGFloat d = narrow_cast<CGFloat>(glyphSpan.typographicWidth())/((double)n + 1);
   CGFloat i1 = 1;
   STU_DISABLE_LOOP_UNROLL
   for (CGFloat& outOffset : outInnerCaretOffsets[{0, n}]) {

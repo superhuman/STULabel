@@ -105,14 +105,14 @@ auto TextFrameLayouter::InitData::create(const ShapedString& shapedString, Range
     for (TextFrameParagraph& para : paras) {
       const ShapedString::Paragraph& p = stringParas[i];
       new (&para) TextFrameParagraph{{
-                    .alignment = paragraphAlignment(p.alignment, p.baseWritingDirection,
-                                                    defaultTextAlignment),
+                    .paragraphIndex = i,
                     .rangeInOriginalString = p.stringRange,
                     .excisedRangeInOriginalString = {p.stringRange.end, p.stringRange.end},
-                    .paragraphIndex = i,
+                    .alignment = paragraphAlignment(p.alignment, p.baseWritingDirection,
+                                                    defaultTextAlignment),
+                    .baseWritingDirection = p.baseWritingDirection,
                     .paragraphTerminatorInOriginalStringLength = narrow_cast<UInt8>(
                                                                    p.terminatorStringLength),
-                    .baseWritingDirection = p.baseWritingDirection,
                     .isIndented = p.isIndented}};
       ++i;
     }

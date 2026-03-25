@@ -67,7 +67,7 @@ UnderlineOffsetAndThickness calculateUnderlineOffsetAndThickness(
     unroundedThickness *= 3;
   }
   return {{.offsetLLO = -offset, .thickness = thickness, .unroundedThickness = unroundedThickness},
-          .originalOffsetLLO = -originalOffset, .originalThickness = originalThickness};
+          -originalOffset, originalThickness};
 }
 
 OffsetAndThickness

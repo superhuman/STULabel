@@ -1233,23 +1233,15 @@ static void clearCurrentLabelTouch(STULabel* self) {
 // MARK: - Default link action sheet
 
 static void openURL(NSURL* url) {
-#if !TARGET_OS_MACCATALYST
-  if (@available(iOS 10, *)) {
-#endif
-    [UIApplication.sharedApplication openURL:url options:@{} completionHandler:^(BOOL success) {
-       if (!success) {
-       #if STU_DEBUG
-         NSLog(@"Failed to open URL %@", url);
-       #else
-         NSLog(@"Failed to open URL");
-       #endif
-       }
-     }];
-#if !TARGET_OS_MACCATALYST
-  } else {
-    [UIApplication.sharedApplication openURL:url];
-  }
-#endif
+  [UIApplication.sharedApplication openURL:url options:@{} completionHandler:^(BOOL success) {
+     if (!success) {
+     #if STU_DEBUG
+       NSLog(@"Failed to open URL %@", url);
+     #else
+       NSLog(@"Failed to open URL");
+     #endif
+     }
+   }];
 }
 
 static UIAlertAction* openURLAction(NSString* title, NSURL* url) {
@@ -1820,8 +1812,8 @@ void setDragSessionCurrentlyLiftedLink(id<UIDragSession> session, STUTextLink* _
     // complex line rect shapes, so we use our own implementation here.
     const CGAffineTransform tf = CGAffineTransformMakeTranslation(-bounds.origin.x,
                                                                   -bounds.origin.y);
-    const CGPathRef path = [rects createPathWithEdgeInsets:UIEdgeInsets{.left = ex, .right = ex,
-                                                                        .top = ey, .bottom = ey}
+    const CGPathRef path = [rects createPathWithEdgeInsets:UIEdgeInsets{.top = ey, .left = ex,
+                                                                        .bottom = ey, .right = ex}
                                               cornerRadius:abs(min(ex, ey))
                    extendTextLinesToCommonHorizontalBounds:true
                                           fillTextLineGaps:true

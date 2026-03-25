@@ -43,7 +43,7 @@ STUDefaultTextAlignment stuDefaultTextAlignment(STULabelDefaultTextAlignment def
     static_assert((int)STUWritingDirectionRightToLeft == 1);
     static_assert((int)STUDefaultTextAlignmentLeft == 0);
     static_assert((int)STUDefaultTextAlignmentRight == 1);
-    return STUDefaultTextAlignment(defaultBaseWritingDirection ^ defaultTextAligment);
+    return STUDefaultTextAlignment((int)defaultBaseWritingDirection ^ (int)defaultTextAligment);
   case STULabelDefaultTextAlignmentTextStart:
   case STULabelDefaultTextAlignmentTextEnd:
     static_assert((int)STULabelDefaultTextAlignmentTextStart == (int)STUDefaultTextAlignmentStart);

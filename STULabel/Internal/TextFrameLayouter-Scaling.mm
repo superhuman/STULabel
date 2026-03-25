@@ -60,13 +60,13 @@ void TextFrameLayouter::layoutAndScale(Size<Float64> frameSize,
   } state;
 
   state.scaleInfo = ScaleInfo{
-    .originalDisplayScale = displayScale.storage().displayScaleOrZero(),
-    .displayScale = displayScale,
-    .scale = 1,
     .inverseScale = 1,
     .firstParagraphFirstLineOffset = 0,
     .firstParagraphFirstLineOffsetType = STUOffsetOfFirstBaselineFromDefault,
-    .baselineAdjustment = options.textScalingBaselineAdjustment
+    .baselineAdjustment = options.textScalingBaselineAdjustment,
+    .scale = 1,
+    .originalDisplayScale = displayScale.storage().displayScaleOrZero(),
+    .displayScale = displayScale
   };
 
   if (!stringParas().isEmpty()) {
@@ -584,13 +584,13 @@ auto TextFrameLayouter::estimateScaleFactorNeededToFit(Float64 frameHeight, Int3
       initialExtraHeadIndent = max(0.f, -initialExtraHeadIndent);
       initialExtraTailIndent = max(0.f, -initialExtraTailIndent);
     }
-    paras.append(ScalingPara{.stringRange = {firstLine.rangeInOriginalString.start,
-                                             lastLine.rangeInOriginalString.end},
-                             .maxLineCount = n,
+    paras.append(ScalingPara{.maxLineCount = n,
                              .lineCount = n,
                              .originalLineCount = n,
                              .initialLinesCount = initialLinesCount,
                              .lineHeight = (lastLine.originY - firstLine.originY)/(n - 1),
+                             .stringRange = {firstLine.rangeInOriginalString.start,
+                                             lastLine.rangeInOriginalString.end},
                              .commonHeadIndent = commonHeadIndent,
                              .initialExtraHeadIndent = initialExtraHeadIndent,
                              .initialExtraTailIndent = initialExtraTailIndent,

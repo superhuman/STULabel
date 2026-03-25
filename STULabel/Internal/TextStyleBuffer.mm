@@ -586,8 +586,8 @@ TextFlags TextStyleBuffer::encodeStringRangeStyle(
         flags |= colorFlags(*colorIndex);
       }
       auto* const info = new (next) TextStyle::StrikethroughInfo{
-                                      .colorIndex = colorIndex,
                                       .style = context.strikethroughStyle,
+                                      .colorIndex = colorIndex,
                                       .originalFontStrikethroughThickness =
                                          cachedFontInfo->strikethroughThickness
                                     };
@@ -610,8 +610,8 @@ TextFlags TextStyleBuffer::encodeStringRangeStyle(
         const bool doNotFill = strokeWidth >= 0;
         auto* const info = new (next) TextStyle::StrokeInfo{
                                         .strokeWidth = doNotFill ? strokeWidth : -strokeWidth,
-                                        .doNotFill = doNotFill,
-                                        .colorIndex = colorIndex};
+                                        .colorIndex = colorIndex,
+                                        .doNotFill = doNotFill};
         next = info + 1;
       }
     }
