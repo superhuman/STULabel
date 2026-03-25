@@ -1,9 +1,9 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrameOptions-Internal.hpp"
+#import "STUTextFrameOptions-Internal.hpp"
 
-#import "STULabel/STUObjCRuntimeWrappers.h"
-#import "STULabel/STUShapedString.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
+#import <STULabel/STUShapedString.h>
 
 #import "Internal/InputClamping.hpp"
 #import "Internal/Once.hpp"

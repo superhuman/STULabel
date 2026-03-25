@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "STUDefines.h"
+#include <STULabel/STUDefines.h>
 
 #ifndef STU_ALWAYS_HAS_OS_LOCK
   #define STU_ALWAYS_HAS_OS_LOCK 0

@@ -1,6 +1,6 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STUStartEndRange.h"
+#import <STULabel/STUStartEndRange.h>
 
 #import "stu/Range.hpp"
 

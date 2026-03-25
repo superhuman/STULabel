@@ -4,7 +4,7 @@
 
 #import "Once.hpp"
 
-#import "STULabel/STUMainScreenProperties.h"
+#import <STULabel/STUMainScreenProperties.h>
 
 namespace stu_label {
 

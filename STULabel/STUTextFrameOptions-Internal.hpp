@@ -1,8 +1,8 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
-#import "STULabelAlignment.h"
+#import <STULabel/STULabelAlignment.h>
 
 namespace stu_label {
   // Note: There are two places where we mutate text frame option properties:

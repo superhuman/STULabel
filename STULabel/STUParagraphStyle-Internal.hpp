@@ -1,4 +1,4 @@
-#import "STUParagraphStyle.h"
+#import <STULabel/STUParagraphStyle.h>
 
 namespace stu_label {
 

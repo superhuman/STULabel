@@ -3,7 +3,7 @@
 
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "STUTextRectArray-Internal.hpp"
 

@@ -1,6 +1,6 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STUBackgroundAttribute.h"
+#import <STULabel/STUBackgroundAttribute.h>
 
 @interface STUBackgroundAttribute () {
 @package

@@ -2,7 +2,7 @@
 
 #import "LayerVisibleBoundsObserver.hpp"
 
-#import "STULabel/STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import <objc/runtime.h>
 

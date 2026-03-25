@@ -1,6 +1,6 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
 #import "Common.hpp"
 

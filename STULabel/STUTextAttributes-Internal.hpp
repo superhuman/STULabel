@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextAttributes.h"
+#import <STULabel/STUTextAttributes.h>
 
 #import "STUBackgroundAttribute-Internal.h"
 #import "STUParagraphStyle-Internal.hpp"

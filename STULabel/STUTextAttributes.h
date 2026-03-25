@@ -1,9 +1,9 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUBackgroundAttribute.h"
-#import "STUParagraphStyle.h"
-#import "STUTextAttachment.h"
-#import "STUTruncationScope.h"
+#import <STULabel/STUBackgroundAttribute.h>
+#import <STULabel/STUParagraphStyle.h>
+#import <STULabel/STUTextAttachment.h>
+#import <STULabel/STUTruncationScope.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

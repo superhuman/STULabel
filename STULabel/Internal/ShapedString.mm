@@ -2,7 +2,7 @@
 
 #import "ShapedString.hpp"
 
-#import "STULabel/STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 #import "STULabel/STUStartEndRange-Internal.hpp"
 #import "STULabel/STUTextAttributes-Internal.hpp"
 

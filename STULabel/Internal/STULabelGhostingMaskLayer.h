@@ -1,7 +1,7 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STULayerWithNullDefaultActions.h"
-#import "STULabel/STUTextLink.h"
+#import <STULabel/STULayerWithNullDefaultActions.h>
+#import <STULabel/STUTextLink.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <UIKit/UIKit.h>
 
@@ -97,4 +97,3 @@ extendTextLinesToCommonHorizontalBounds:(bool)extendTextLinesToCommonHorizontalB
 @end
 
 STU_ASSUME_NONNULL_AND_STRONG_END
-

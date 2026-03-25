@@ -1,8 +1,8 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STUTextHighlightStyle.h"
-#import "STUTextFrameRange.h"
-#import "STUTextRange.h"
+#import <STULabel/STUTextHighlightStyle.h>
+#import <STULabel/STUTextFrameRange.h>
+#import <STULabel/STUTextRange.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

@@ -2,7 +2,7 @@
 
 #import "STUTextFrameDrawingOptions-Internal.hpp"
 
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "Internal/Equal.hpp"
 #import "Internal/InputClamping.hpp"

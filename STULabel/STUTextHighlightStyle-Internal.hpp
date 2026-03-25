@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextHighlightStyle.h"
+#import <STULabel/STUTextHighlightStyle.h>
 
 #import "Internal/TextStyle.hpp"
 

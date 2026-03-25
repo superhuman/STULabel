@@ -2,7 +2,7 @@
 
 #import "STULabelLayoutInfo-Internal.hpp"
 
-#import "STULabel/STUTextFrame-Unsafe.h"
+#import <STULabel/STUTextFrame-Unsafe.h>
 
 #import "Internal/LabelParameters.hpp"
 

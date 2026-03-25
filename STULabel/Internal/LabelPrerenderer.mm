@@ -2,7 +2,7 @@
 
 #import "LabelPrerenderer.hpp"
 
-#import "STULabel/STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 STU_EXTERN_C_BEGIN
 

@@ -8,7 +8,7 @@
 // that the text frame is kept alive, e.g. by storing a reference to the text frame in a local
 // variable that is annotated with the NS_VALID_UNTIL_END_OF_SCOPE attribute.
 
-#import "STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
 #import <CoreText/CoreText.h>
 #import <Foundation/Foundation.h>
@@ -258,5 +258,4 @@ STUTextFrameGraphemeClusterRange STUTextFrameLineGetRangeOfGraphemeClusterAtXOff
                                    const STUTextFrameLine * __nonnull line, double xOffset);
 
 STU_EXTERN_C_END
-
 

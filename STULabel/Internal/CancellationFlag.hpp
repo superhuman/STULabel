@@ -1,6 +1,6 @@
 // Copyright 2018 Stephan Tolksdorf
 
-#import "STULabel/STUCancellationFlag.h"
+#import <STULabel/STUCancellationFlag.h>
 
 #import "Common.hpp"
 

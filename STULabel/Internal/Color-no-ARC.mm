@@ -5,7 +5,7 @@
   #error This file must be compiled with -fno-objc-arc
 #endif
 
-#import "STULabel/STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <UIKit/UIKit.h>
 

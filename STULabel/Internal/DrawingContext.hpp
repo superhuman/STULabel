@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrame-Unsafe.h"
+#import <STULabel/STUTextFrame-Unsafe.h>
 
 #import "STULabel/STUTextHighlightStyle-Internal.hpp"
 

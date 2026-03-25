@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextRectArray.h"
+#import <STULabel/STUTextRectArray.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

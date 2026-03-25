@@ -1,8 +1,8 @@
 // Copyright 2017 Stephan Tolksdorf
 
-#import "STULabel/STULabelOverlayStyle.h"
-#import "STULabel/STULayerWithNullDefaultActions.h"
-#import "STULabel/STUTextLink.h"
+#import <STULabel/STULabelOverlayStyle.h>
+#import <STULabel/STULayerWithNullDefaultActions.h>
+#import <STULabel/STUTextLink.h>
 
 /// The bounds are always CGRectZero, but the shape extends beyond the bounds.
 @interface STULabelLinkOverlayLayer : STUShapeLayerWithNullDefaultActions

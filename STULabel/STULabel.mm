@@ -1,10 +1,10 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel.h"
-#import "STULabelSwiftExtensions.h"
+#import <STULabel/STULabel.h>
+#import <STULabel/STULabelSwiftExtensions.h>
 
-#import "NSAttributedString+STUDynamicTypeFontScaling.h"
-#import "UIFont+STUDynamicTypeFontScaling.h"
+#import <STULabel/NSAttributedString+STUDynamicTypeFontScaling.h>
+#import <STULabel/UIFont+STUDynamicTypeFontScaling.h>
 
 #import "STULabelLayoutInfo-Internal.hpp"
 

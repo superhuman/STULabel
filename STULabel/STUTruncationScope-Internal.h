@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTruncationScope.h"
+#import <STULabel/STUTruncationScope.h>
 
 @interface STUTruncationScope () {
 @package

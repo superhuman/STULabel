@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelLayoutInfo.h"
+#import <STULabel/STULabelLayoutInfo.h>
 
 #import "Internal/TextFrame.hpp"
 

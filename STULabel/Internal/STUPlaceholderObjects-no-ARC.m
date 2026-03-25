@@ -6,9 +6,9 @@
 
 #import "STUPlaceholderObjects.h"
 
-#import "STULabel/STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
-#import "STULabel/STUShapedString.h"
+#import <STULabel/STUShapedString.h>
 
 // We use forward declarations here so that we don't need to import the corresponding header files
 // from this no-objc-arc file.

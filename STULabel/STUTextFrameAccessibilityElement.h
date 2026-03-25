@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
 STU_ASSUME_NONNULL_AND_STRONG_BEGIN
 

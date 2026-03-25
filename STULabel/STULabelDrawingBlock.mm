@@ -1,9 +1,9 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
 #import "STULabelDrawingBlock-Internal.hpp"
-#import "STULabelSwiftExtensions.h"
+#import <STULabel/STULabelSwiftExtensions.h>
 
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "Internal/TextFrame.hpp"
 

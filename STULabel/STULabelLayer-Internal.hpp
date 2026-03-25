@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelLayer.h"
+#import <STULabel/STULabelLayer.h>
 
-#import "STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
 #import "Internal/Unretained.hpp"
 

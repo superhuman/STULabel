@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
 #import "stu/Assert.h"
 

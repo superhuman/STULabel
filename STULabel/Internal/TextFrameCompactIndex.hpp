@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrame.h"
+#import <STULabel/STUTextFrame.h>
 
 namespace stu_label {
 

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabelOverlayStyle.h"
+#import <STULabel/STULabelOverlayStyle.h>
 
 #import "Internal/Equal.hpp"
 #import "Internal/Hash.hpp"

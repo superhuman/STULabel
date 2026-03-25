@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "NSAttributedString+STUDynamicTypeFontScaling.h"
+#import <STULabel/NSAttributedString+STUDynamicTypeFontScaling.h>
 
-#import "UIFont+STUDynamicTypeFontScaling.h"
+#import <STULabel/UIFont+STUDynamicTypeFontScaling.h>
 
 @implementation NSAttributedString (STUDynamicTypeScaling)
 

@@ -1,6 +1,6 @@
 // Copyright 2016–2018 Stephan Tolksdorf
 
-#import "STULabel/STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
 #import "DrawingContext.hpp"
 #import "TextFrame.hpp"

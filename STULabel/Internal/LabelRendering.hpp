@@ -1,10 +1,10 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STULabel/STUTextFrame-Unsafe.h"
+#import <STULabel/STUTextFrame-Unsafe.h>
 
-#import "STULabel/STUImageUtils.h"
+#import <STULabel/STUImageUtils.h>
 
-#import "STULabel/STULabelDrawingBlock.h"
+#import <STULabel/STULabelDrawingBlock.h>
 #import "STULabel/STULabelLayoutInfo-Internal.hpp"
 
 

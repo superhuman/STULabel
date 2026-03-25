@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "UIFont+STUDynamicTypeFontScaling.h"
+#import <STULabel/UIFont+STUDynamicTypeFontScaling.h>
 
-#import "stu_mutex.h"
+#import <STULabel/stu_mutex.h>
 
 #import <dispatch/dispatch.h>
 

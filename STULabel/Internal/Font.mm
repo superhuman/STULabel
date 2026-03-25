@@ -2,7 +2,7 @@
 
 #import "Font.hpp"
 
-#import "STULabel/stu_mutex.h"
+#import <STULabel/stu_mutex.h>
 
 #import "Hash.hpp"
 #import "HashTable.hpp"

@@ -1,7 +1,7 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
 #import "STULabel/STUShapedString-Internal.hpp"
-#import "STULabel/STUTextFrame-Unsafe.h"
+#import <STULabel/STUTextFrame-Unsafe.h>
 
 #import "Font.hpp"
 #import "HashTable.hpp"

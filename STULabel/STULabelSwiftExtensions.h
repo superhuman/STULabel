@@ -1,5 +1,5 @@
 
-#import "STULabel.h"
+#import <STULabel/STULabel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,8 +1,8 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "NSLayoutAnchor+STULabelSpacing.h"
-#import "STULabelLayer.h"
-#import "STULabelOverlayStyle.h"
+#import <STULabel/NSLayoutAnchor+STULabelSpacing.h>
+#import <STULabel/STULabelLayer.h>
+#import <STULabel/STULabelOverlayStyle.h>
 
 @protocol STULabelDelegate;
 

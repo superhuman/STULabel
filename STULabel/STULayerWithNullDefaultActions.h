@@ -1,6 +1,6 @@
 // Copyright 2016–2017 Stephan Tolksdorf
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <QuartzCore/QuartzCore.h>
 

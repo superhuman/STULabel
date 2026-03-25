@@ -2,7 +2,7 @@
 
 #import "STUTextRectArray-Internal.hpp"
 
-#import "STUObjCRuntimeWrappers.h"
+#import <STULabel/STUObjCRuntimeWrappers.h>
 
 #import "Internal/InputClamping.hpp"
 #import "Internal/Once.hpp"

@@ -1,6 +1,6 @@
 // Copyright 2017–2018 Stephan Tolksdorf
 
-#import "STUDefines.h"
+#import <STULabel/STUDefines.h>
 
 #import <Foundation/Foundation.h>
 
